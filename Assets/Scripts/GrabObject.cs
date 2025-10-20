@@ -5,45 +5,49 @@ using UnityEngine;
 public class GrabObject : MonoBehaviour
 {
     public GameObject handpoint;
+    public float grabDistance = 2f;
     private GameObject pickedObject = null;
-
 
     void Update()
     {
-        if (pickedObject != null)
+        if (pickedObject == null)
         {
-            if (Input.GetKey("r"))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                pickedObject.GetComponent<Rigidbody>().useGravity = true;
-                pickedObject.GetComponent<Rigidbody>().isKinematic = false;
-                pickedObject.gameObject.transform.SetParent(null); ;
+                Ray ray = new Ray(transform.position, transform.forward);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, grabDistance))
+                {
+                    if (hit.collider.CompareTag("Object"))
+                    {
+                        Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+                        if (rb != null)
+                        {
+                            rb.useGravity = false;
+                            rb.isKinematic = true;
+                            hit.transform.position = handpoint.transform.position;
+                            hit.transform.SetParent(handpoint.transform);
+                            pickedObject = hit.collider.gameObject;
+
+                           
+                            pickedObject.tag = "Informe";
+                        }
+                    }
+                }
+
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Rigidbody rb = pickedObject.GetComponent<Rigidbody>();
+                rb.useGravity = true;
+                rb.isKinematic = false;
+                pickedObject.transform.SetParent(null);
                 pickedObject = null;
             }
-
-
         }
-
-    }
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("Object"))
-        {
-            if (Input.GetKey("e") && pickedObject == null)
-            {
-                other.GetComponent<Rigidbody>().useGravity = false;
-                other.GetComponent<Rigidbody>().isKinematic = true;
-                other.transform.position = handpoint.transform.position;
-                other.gameObject.transform.SetParent(handpoint.gameObject.transform);
-                pickedObject = other.gameObject;
-
-            }
-
-
-        }
-
-
-
     }
 }

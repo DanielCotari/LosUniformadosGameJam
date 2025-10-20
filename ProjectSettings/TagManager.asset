@@ -6,11 +6,12 @@ TagManager:
   tags:
   - CinemachineTarget
   - Object
+  - Informe
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interactivo
   - Water
   - UI
   - 
