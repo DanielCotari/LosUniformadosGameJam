@@ -7,6 +7,10 @@ TagManager:
   - CinemachineTarget
   - Object
   - Informe
+  - Lista
+  - Door
+  - TriggerDoor
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -14,11 +18,11 @@ TagManager:
   - Interactivo
   - Water
   - UI
-  - 
-  - 
+  - PortalFX
+  - Wall
   - Character
   - Ground
-  - 
+  - Door
   - 
   - 
   - 
