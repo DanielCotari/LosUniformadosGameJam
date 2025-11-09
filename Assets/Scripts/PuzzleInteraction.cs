@@ -1,11 +1,20 @@
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PuzzleInteraction : MonoBehaviour
 {
-    public GameObject puzzleUI;  // Panel del minijuego (PuzzleUI)
-    public GameObject player;    // referencia al Player (arrastrar en inspector)
+    [Header("Puzzle Settings")]
+    public GameObject puzzleUI;
+    public string taskName;
+    public AudioSource audioSource;
+    public AudioClip[] audioClips; // clips de sonido para la acción
+
+    [Header("Scene Settings")]
+    public string nextSceneAfterPuzzle; // escena a cargar después de resolver puzzle
+
     private bool puzzleActive = false;
-    private bool isSolved = false; // evita resolver varias veces
+    private bool isSolved = false;
 
     void Start()
     {
@@ -21,12 +30,21 @@ public class PuzzleInteraction : MonoBehaviour
         if (puzzleUI != null)
             puzzleUI.SetActive(true);
 
-        var pm = player.GetComponent<PlayerMovement>();
-        if (pm != null)
-            pm.enabled = false;
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // 🔹 Acción según el tag del objeto
+        if (gameObject.CompareTag("cama"))
+        {
+            Debug.Log("Cama: cambiando de escena");
+            EndPuzzle();
+            SceneManager.LoadScene("Dream2"); // pon el nombre exacto
+        }
+        else if (gameObject.CompareTag("Pepsi"))
+        {
+            Debug.Log("Pepsi: reproduciendo sonidos y destruyendo objeto");
+            StartCoroutine(PlayTwoSoundsAndDestroy(gameObject));
+        }
     }
 
     public void EndPuzzle()
@@ -37,21 +55,42 @@ public class PuzzleInteraction : MonoBehaviour
         if (puzzleUI != null)
             puzzleUI.SetActive(false);
 
-        var pm = player.GetComponent<PlayerMovement>();
-        if (pm != null)
-            pm.enabled = true;
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    // --- M�todo que pide PuzzleManager al resolverse ---
     public void OnPuzzleSolved()
     {
         if (isSolved) return;
         isSolved = true;
 
-        // Aqu� a�ades lo que ocurra al resolver (abrir puerta, sonido, etc.)
+        // Marca la tarea como completada
+        if (!string.IsNullOrEmpty(taskName))
+            TaskManager.Instance.CompleteTask(taskName);
+
         EndPuzzle();
+
+        // Cambia de escena si está definida
+        if (!string.IsNullOrEmpty(nextSceneAfterPuzzle))
+            SceneManager.LoadScene(nextSceneAfterPuzzle);
+    }
+
+    // Para Pepsi: reproduce dos sonidos y destruye
+    public IEnumerator PlayTwoSoundsAndDestroy(GameObject targetPepsi)
+    {
+        Destroy(targetPepsi);
+
+        if (audioSource != null && audioClips.Length >= 2)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                audioSource.clip = audioClips[i];
+                audioSource.Play();
+                yield return new WaitForSeconds(audioClips[i].length);
+            }
+        }
+
+        // Marca puzzle como resuelto
+        OnPuzzleSolved();
     }
 }
