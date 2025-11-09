@@ -18,8 +18,13 @@ TagManager:
   - Interactivo
   - Water
   - UI
+<<<<<<< HEAD
   - PortalFX
   - Wall
+=======
+  - Interactable
+  - 
+>>>>>>> House-and-Second-Dream
   - Character
   - Ground
   - Door
