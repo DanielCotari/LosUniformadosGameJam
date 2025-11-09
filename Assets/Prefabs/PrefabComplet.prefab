@@ -18927,6 +18927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &1378183465993794152
 AudioSource:
@@ -19079,6 +19081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526553055038507
 MeshRenderer:
@@ -19730,6 +19734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &7063141372862149140
 AudioSource:
@@ -19922,6 +19928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &4788247706916054730
 AudioSource:
@@ -20114,6 +20122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &9180861993153523273
 AudioSource:
@@ -20306,6 +20316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &732209386924665642
 AudioSource:
@@ -20538,6 +20550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526552786503497
 MeshRenderer:
@@ -20771,6 +20785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &7699745230516426008
 AudioSource:
@@ -21125,6 +21141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &3558162526993988556
 AudioSource:
@@ -21358,6 +21376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526552574256899
 MeshRenderer:
@@ -21645,6 +21665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526552502983746
 MeshRenderer:
@@ -21891,6 +21913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &4230655253073587986
 AudioSource:
@@ -23014,6 +23038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526554143444612
 MeshRenderer:
@@ -23490,6 +23516,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &6233478833445888545
 AudioSource:
@@ -23641,6 +23669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526554331255618
 MeshRenderer:
@@ -24198,6 +24228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &4706963255879189537
 AudioSource:
@@ -24350,6 +24382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526553842394065
 MeshRenderer:
@@ -24839,6 +24873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &3042580820903236032
 AudioSource:
@@ -24990,6 +25026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!23 &8625526553610334953
 MeshRenderer:
@@ -25223,6 +25261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &7146586250763803445
 AudioSource:
@@ -25415,6 +25455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &5432017642387375100
 AudioSource:
@@ -26498,6 +26540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &2364843576429865384
 AudioSource:
@@ -27028,6 +27072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227756248ebeb43419de15e3f3f7002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoAmbiental: {fileID: 0}
+  esPuertaCorrecta: 0
   puertaVisual: {fileID: 0}
 --- !u!82 &1723821331642404156
 AudioSource:

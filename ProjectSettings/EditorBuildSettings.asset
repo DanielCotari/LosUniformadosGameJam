@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 1c925face6046494983e42ce3adec424
+  - enabled: 1
+    path: Assets/Scenes/IntroFinalLevel.unity
+    guid: baea153cb672b8747b4154eaa4e73e91
+  - enabled: 1
+    path: Assets/Scenes/NlvFinal.unity
+    guid: 92ca138cbb8cbf848a04a3679ff7198f
+  - enabled: 1
+    path: Assets/Scenes/AscensorVideoScene.unity
+    guid: 26f5e3c6777ff414aace78bc5f7a05df
+  - enabled: 1
+    path: Assets/Scenes/CinematicaFinal.unity
+    guid: 59d414769a8d8634397bd414c4e57006
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

@@ -51,20 +51,22 @@ public class EscapeByAcceptance : MonoBehaviour
 
     void SpawnExitDoor()
     {
-        // Elimina la componente vertical del forward para evitar que la puerta aparezca arriba
-        Vector3 forwardFlat = new Vector3(player.forward.x, 0f, player.forward.z).normalized;
+        // Dirección horizontal hacia atrás
+        Vector3 direccionAtras = -new Vector3(player.forward.x, 0f, player.forward.z).normalized;
 
-        // Calcula la posición detrás del jugador en el plano horizontal
-        Vector3 spawnPosition = player.position - forwardFlat * 2f;
-        spawnPosition.y = player.position.y + alturaOffset; // Ajusta la altura aquí
+        // Posición detrás del jugador
+        Vector3 spawnPosition = player.position + direccionAtras * 0.4f; 
 
-        // Instancia la puerta con rotación del prefab
+        // Ajuste de altura
+        spawnPosition.y = player.position.y + alturaOffset;
+
+        // Instancia la puerta
         Instantiate(exitDoorPrefab, spawnPosition, exitDoorPrefab.transform.rotation);
 
-        // Desactiva al enemigo: el tiempo deja de perseguirte
         enemy.SetActive(false);
         doorSpawned = true;
 
-        Debug.Log("Has aceptado el paso del tiempo. La salida ha aparecido.");
+        Debug.Log("Puerta generada justo detrás del jugador.");
     }
+
 }
